@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body style="background-color:#ff8533;margin-left:35%;margin-top:12%">
+<h1 style="color:#663300"> My All Articles</h1>
+ 
+<table>
+  <tr>
+    <br>
+    <th>Title |  </th>
+    <th>Text</th>
+  </tr>
+  <br>
+ 
+  <% @articles.each do |article| %>
+    <tr>
+      <td><%= article.title %>  |  </td>
+      <td><%= article.text %></td>
+    </tr>
+  <% end %>
+</table>
+<br>
+<%= link_to 'New article', new_article_path %>
+</body>
+</html>

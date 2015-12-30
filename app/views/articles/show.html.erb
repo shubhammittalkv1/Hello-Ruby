@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body style="background-color:#ff8533;margin-left:35%;margin-top:12%">
+	<h1 style="margin-left:-3%;margin-top:10%;color:#663300">Your Article Is</h1>
+<p>
+  <strong>Title:</strong>
+  <%= @article.title %>
+</p>
+ 
+<p>
+  <strong>Text:</strong>
+  <%= @article.text %>
+</p>
+
+ 
+<%= link_to 'Back', articles_path %>
+</body>
+</html>
